@@ -29,7 +29,7 @@ class WorldTime{
       print('now $now');
 
       //set the time property
-      isDaytime = now.hour>6 && now.hour<20 ? true : false ;
+      isDaytime = now.hour>6 && now.hour<19 ? true : false ;
       time = DateFormat.jm().format(now);
     }
     catch(e){
