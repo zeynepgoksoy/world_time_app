@@ -15,7 +15,7 @@ class _LoadingState extends State<Loading> {
   setupWorldTime() async {
     WorldTime instance = WorldTime(location: 'Berlin',flag: 'germany.png', url:'Europe/Berlin');
     await instance.getTime();
-    Navigator.pushReplacementNamed(context, '/home', arguments : { // arguments are key value pairs that we want to pass to he next route
+    Navigator.pushReplacementNamed(context, '/home', arguments : { // arguments are key value pairs that we want to pass to the next route
       'location' : instance.location,
       'flag' : instance.flag,
       'time' : instance.time,
